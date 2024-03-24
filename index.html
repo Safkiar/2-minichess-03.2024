@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Mirza:wght@400;500;600;700&family=MonteCarlo&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Wallpoet&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  
+    <div class="firstHeading">
+      <div class="Headcontainer">   
+      <div class="homepage firstbutton">Homepage</div>
+      <div class="newGame firstbutton" id="reloadDiv">New Game</div></div>
+   
+      <div class="minichess Game">Mini Chess</div>
+      <div class="check" id="myElement">Check!🚨🚨🚨</div>
+      <div class="checkmate" id="myElement2">Checkmate! ☠☠☠</div>
+      <div class="TimeOut" id="myElement3"></div>
+      <div class="autor footer">©Michał Kikowski</div>
+    </div>
+    <div class="secondHeading">
+      <div id="overlay"></div>
+      <div class="timerwhite">White: 05:00</div>
+      <div class="responsive">White to Move</div>
+      <div class="timerblack">Black: 05:00</div>
+    </div>
+  
+    <div class="thirdHeading">
+      <div class="firstColumn">
+        <div class="description">Mini Chess is an innovative 6x8 adaptation of traditional chess, incorporating full game rules including castling, en passant, and pawn promotion. This streamlined version amplifies strategic intricacies by condensing the battlefield, compelling players to engage in complex tactics and maneuvers within a compact space. It stands as a testament to skillful game design and programming, ideal for those seeking to refine their chess strategy in a novel format.</div>
+      </div>
+      <div class="secondColumn" id="secondColumn">
+        <div class="columnConstruction hidden" id="Chart">
+          <div class="chooseElement" style="position: absolute;"> 
+          <div class="horseImage"><img src="pieces/P7.png"/></div>
+        <div class="queenImage"><img src="pieces/P11.png" /> </div></div> </div>
+          <div class="five">
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+            <p>D</p>
+            <p>E</p>
+            <p>F</p>
+          </div>
+      <div class="secondColumn2">
+          <div class="four">
+            <p>8</p>
+            <p>7</p>
+            <p>6</p>
+            <p>5</p>
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+          </div>
+          <main>
+            <div id="P8A" class="R8 A place"><img src="pieces/P21.png" id="8A" class="piece black" alt="" draggable="true"/> </div>
+            <div id="P8B" class="R8 B place"> <img src="pieces/P19.png" id="8B" class="piece black" alt="" draggable="true" />
+            </div>
+            <div id="P8C" class="R8 C place"> <img src="pieces/P24.png" id="8C" class="piece black" alt="" draggable="true" /></div>
+            <div id="P8D" class="R8 D place"> <img src="pieces/P23.png" id="8D" class="piece black" alt="" draggable="true" /></div>
+            <div id="P8E" class="R8 E place"> <img src="pieces/P19.png" id="8E" class="piece black" alt="" draggable="true" /></div>
+            <div id="P8F" class="R8 F place"> <img src="pieces/P21.png" id="8F" class="piece black" alt="" draggable="true" /></div>
+            <div id="P7A" class="R7 A place"> <img src="pieces/P13.png" id="7A" class="piece black" alt="" draggable="true" /></div>
+            <div id="P7B" class="R7 B place"> <img src="pieces/P13.png" id="7B" class="piece black" alt="" draggable="true" /></div>
+            <div id="P7C" class="R7 C place"> <img src="pieces/P13.png" id="7C" class="piece black" alt="" draggable="true" /></div>
+            <div id="P7D" class="R7 D place"> <img src="pieces/P13.png" id="7D" class="piece black" alt="" draggable="true" /></div>
+            <div id="P7E" class="R7 E place"> <img src="pieces/P13.png" id="7E" class="piece black" alt="" draggable="true" /></div> 
+            <div id="P7F" class="R7 F place"> <img src="pieces/P13.png" id="7F" class="piece black" alt="" draggable="true" /></div> 
+            <div id="P6A" class="R6 A place"></div> 
+            <div id="P6B" class="R6 B place"></div> 
+            <div id="P6C" class="R6 C place"></div> 
+            <div id="P6D" class="R6 D place"></div> 
+            <div id="P6E" class="R6 E place"></div> 
+            <div id="P6F" class="R6 F place"></div> 
+            <div id="P5A" class="R5 A place"></div> 
+            <div id="P5B" class="R5 B place"></div> 
+            <div id="P5C" class="R5 C place"></div> 
+            <div id="P5D" class="R5 D place"></div>
+            <div id="P5E" class="R5 E place"></div>
+            <div id="P5F" class="R5 F place"></div>
+            <div id="P4A" class="R4 A place"></div>
+            <div id="P4B" class="R4 B place"></div>
+            <div id="P4C" class="R4 C place"></div>
+            <div id="P4D" class="R4 D place"></div>
+            <div id="P4E" class="R4 E place"></div>
+            <div id="P4F" class="R4 F place"></div>
+            <div id="P3A" class="R3 A place"></div>
+            <div id="P3B" class="R3 B place"></div>
+            <div id="P3C" class="R3 C place"></div>
+            <div id="P3D" class="R3 D place"></div> 
+            <div id="P3E" class="R3 E place"></div> 
+            <div id="P3F" class="R3 F place"></div> 
+            <div id="P2A" class="R2 A place"> <img src="pieces/P1.png" id="2A" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P2B" class="R2 B place"> <img src="pieces/P1.png" id="2B" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P2C" class="R2 C place"> <img src="pieces/P1.png" id="2C" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P2D" class="R2 D place"> <img src="pieces/P1.png" id="2D" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P2E" class="R2 E place"> <img src="pieces/P1.png" id="2E" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P2F" class="R2 F place"> <img src="pieces/P1.png" id="2F" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1A" class="R1 A place"> <img src="pieces/P9.png" id="1A" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1B" class="R1 B place"> <img src="pieces/P7.png" id="1B" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1C" class="R1 C place"> <img src="pieces/P12.png" id="1C" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1D" class="R1 D place"> <img src="pieces/P11.png" id="1D" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1E" class="R1 E place"> <img src="pieces/P7.png" id="1E" class="piece white" alt="" draggable="true" /></div> 
+            <div id="P1F" class="R1 F place"> <img src="pieces/P9.png" id="1F" class="piece white" alt="" draggable="true" /></div>
+          </main>
+   
+       
+      </div>
+      </div>
+        <div class="thirdColumn"> <div class="round">Game</div> <div class="changelog"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="calculationBoard" style="display: none">
+      <div id="C8A" class="R8 A place"> <img src="pieces/P21.png" id="8AD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C8B" class="R8 B place"> <img src="pieces/P19.png" id="8BD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C8C" class="R8 C place"> <img src="pieces/P24.png" id="8CD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C8D" class="R8 D place"> <img src="pieces/P23.png" id="8DD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C8E" class="R8 E place"> <img src="pieces/P19.png" id="8ED" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C8F" class="R8 F place"> <img src="pieces/P21.png" id="8FD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7A" class="R7 A place"> <img src="pieces/P13.png" id="7AD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7B" class="R7 B place"> <img src="pieces/P13.png" id="7BD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7C" class="R7 C place"> <img src="pieces/P13.png" id="7CD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7D" class="R7 D place"> <img src="pieces/P13.png" id="7DD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7E" class="R7 E place"> <img src="pieces/P13.png" id="7ED" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C7F" class="R7 F place"> <img src="pieces/P13.png" id="7FD" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="C6A" class="R6 A place"></div> 
+      <div id="C6B" class="R6 B place"> </div> 
+      <div id="C6C" class="R6 C place"></div> 
+      <div id="C6D" class="R6 D place">  </div> 
+      <div id="C6E" class="R6 E place"></div> 
+      <div id="C6F" class="R6 F place"></div> 
+      <div id="C5A" class="R5 A place"></div> 
+      <div id="C5B" class="R5 B place"></div> 
+      <div id="C5C" class="R5 C place"></div> 
+      <div id="C5D" class="R5 D place"> </div>
+      <div id="C5E" class="R5 E place"></div>
+      <div id="C5F" class="R5 F place"></div>
+      <div id="C4A" class="R4 A place"></div>
+      <div id="C4B" class="R4 B place"></div>
+      <div id="C4C" class="R4 C place"></div>
+      <div id="C4D" class="R4 D place"> </div>
+      <div id="C4E" class="R4 E place"></div>
+      <div id="C4F" class="R4 F place"></div>
+      <div id="C3A" class="R3 A place"></div>
+      <div id="C3B" class="R3 B place"> </div>
+      <div id="C3C" class="R3 C place"></div>
+      <div id="C3D" class="R3 D place">  </div>
+      <div id="C3E" class="R3 E place"> </div>
+      <div id="C3F" class="R3 F place"></div>
+      <div id="C2A" class="R2 A place"> <img src="pieces/P1.png" id="2AD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C2B" class="R2 B place"> <img src="pieces/P1.png" id="2BD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C2C" class="R2 C place"> <img src="pieces/P1.png" id="2CD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C2D" class="R2 D place"> <img src="pieces/P1.png" id="2DD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C2E" class="R2 E place"> <img src="pieces/P1.png" id="2ED" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C2F" class="R2 F place"> <img src="pieces/P1.png" id="2FD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1A" class="R1 A place"> <img src="pieces/P9.png" id="1AD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1B" class="R1 B place"> <img src="pieces/P7.png" id="1BD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1C" class="R1 C place"> <img src="pieces/P12.png" id="1CD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1D" class="R1 D place"> <img src="pieces/P11.png" id="1DD" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1E" class="R1 E place"> <img src="pieces/P7.png" id="1ED" class="piece white" alt="" draggable="true" /> </div>
+      <div id="C1F" class="R1 F place"> <img src="pieces/P9.png" id="1FD" class="piece white" alt="" draggable="true" /> </div>
+    </div>
+    <div id="kingboard" style="display: none"> 
+      <div id="X8A" class="R8 A place"> <img src="pieces/P21.png" id="8AX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X8B" class="R8 B place"> <img src="pieces/P19.png" id="8BX" class="piece black" alt="" draggable="true" /> </div>
+      <div id="X8C" class="R8 C place"> <img src="pieces/P24.png" id="8CX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X8D" class="R8 D place"> <img src="pieces/P23.png" id="8DX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X8E" class="R8 E place"> <img src="pieces/P19.png" id="8EX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X8F" class="R8 F place"> <img src="pieces/P21.png" id="8FX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7A" class="R7 A place"> <img src="pieces/P13.png" id="7AX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7B" class="R7 B place"> <img src="pieces/P13.png" id="7BX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7C" class="R7 C place"> <img src="pieces/P13.png" id="7CX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7D" class="R7 D place"> <img src="pieces/P13.png" id="7DX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7E" class="R7 E place"> <img src="pieces/P13.png" id="7EX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X7F" class="R7 F place"> <img src="pieces/P13.png" id="7FX" class="piece black" alt="" draggable="true" /> </div> 
+      <div id="X6A" class="R6 A place"></div> 
+      <div id="X6B" class="R6 B place">  </div> 
+      <div id="X6C" class="R6 C place"></div> 
+      <div id="X6D" class="R6 D place"> </div> 
+      <div id="X6E" class="R6 E place"> </div> 
+      <div id="X6F" class="R6 F place"></div> 
+      <div id="X5A" class="R5 A place"></div> 
+      <div id="X5B" class="R5 B place"></div> 
+      <div id="X5C" class="R5 C place"></div> 
+      <div id="X5D" class="R5 D place"> </div> 
+      <div id="X5E" class="R5 E place"></div> 
+      <div id="X5F" class="R5 F place"></div> 
+      <div id="X4A" class="R4 A place"></div> 
+      <div id="X4B" class="R4 B place"></div> 
+      <div id="X4C" class="R4 C place"></div> 
+      <div id="X4D" class="R4 D place"> </div> 
+      <div id="X4E" class="R4 E place"></div> 
+      <div id="X4F" class="R4 F place"></div> 
+      <div id="X3A" class="R3 A place"></div> 
+      <div id="X3B" class="R3 B place"></div> 
+      <div id="X3C" class="R3 C place"></div> 
+      <div id="X3D" class="R3 D place"></div> 
+      <div id="X3E" class="R3 E place"></div> 
+      <div id="X3F" class="R3 F place"></div> 
+      <div id="X2A" class="R2 A place"> <img src="pieces/P1.png" id="2AX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X2B" class="R2 B place"> <img src="pieces/P1.png" id="2BX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X2C" class="R2 C place"> <img src="pieces/P1.png" id="2CX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X2D" class="R2 D place"> <img src="pieces/P1.png" id="2DX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X2E" class="R2 E place"> <img src="pieces/P1.png" id="2EX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X2F" class="R2 F place"> <img src="pieces/P1.png" id="2FX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1A" class="R1 A place"> <img src="pieces/P9.png" id="1AX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1B" class="R1 B place"> <img src="pieces/P7.png" id="1BX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1C" class="R1 C place"> <img src="pieces/P12.png" id="1CX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1D" class="R1 D place"> <img src="pieces/P11.png" id="1DX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1E" class="R1 E place"> <img src="pieces/P7.png" id="1EX" class="piece white" alt="" draggable="true" /> </div> 
+      <div id="X1F" class="R1 F place"> <img src="pieces/P9.png" id="1FX" class="piece white" alt="" draggable="true" /> </div>
+    </div>
+    <div id="trash" style="display: none">
+   
+    </div>
+    <div id="promotionFiles" style="display:none">
+      <img src="pieces/P7.png" id="3EX" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P11.png" id="4DX" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P7.png" id="3BX" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P11.png" id="3DX" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P23.png" id="5DX" class="piece black" alt="" draggable="true" /> 
+      <img src="pieces/P19.png" id="6EX" class="piece black" alt="" draggable="true" />
+      <img src="pieces/P23.png" id="6DX" class="piece black" alt="" draggable="true" />  
+      <img src="pieces/P19.png" id="6BX" class="piece black" alt="" draggable="true" />
+      <img src="pieces/P7.png" id="3ED" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P11.png" id="3DD" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P7.png" id="3BD" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P11.png" id="4DD" class="piece white" alt="" draggable="true" />
+      <img src="pieces/P23.png" id="5DD" class="piece black" alt="" draggable="true" />
+      <img src="pieces/P19.png" id="6ED" class="piece black" alt="" draggable="true" />
+      <img src="pieces/P23.png" id="6DD" class="piece black" alt="" draggable="true" /> 
+      <img src="pieces/P19.png" id="6BD" class="piece black" alt="" draggable="true" />
+      <img src="pieces/P7.png" id="3E" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P11.png" id="3D" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P7.png" id="3B" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P11.png" id="4D" class="piece white" alt="" draggable="true" /> 
+      <img src="pieces/P23.png" id="5D" class="piece black" alt="" draggable="true" /> 
+      <img src="pieces/P19.png" id="6E" class="piece black" alt="" draggable="true" /> 
+      <img src="pieces/P23.png" id="6D" class="piece black" alt="" draggable="true" /> 
+      <img src="pieces/P19.png" id="6B" class="piece black" alt="" draggable="true" />
+    </div>
+   
+    <div id="promotion" style="display: none"></div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
+
+<!--     
+
+
+    </div>
+    
+
+
+    
+    
+    </div>
+    -->
+
+<!-- 
+      <div class="width"> </div>
+      <div class="height"></div> -->
+
+<!--  pionki mogą odkryć króla  -->
