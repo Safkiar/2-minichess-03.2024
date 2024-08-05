@@ -4,7 +4,7 @@ body {
   background: linear-gradient(to right, #00c9ff, #92fe9d);
   box-sizing: border-box;
   overflow-x: hidden; /* Prevent horizontal overflow */
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   font-family: "Saira Condensed", sans-serif;
   font-weight: 500;
@@ -561,5 +561,24 @@ main .R2:nth-child(2n),
   .changelog {
     height: 300px;
     margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .secondHeading {
+    width: 99vw;
+    height: 12%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .timerwhite {
+      margin-left: 10px;
+      padding: 5px 10px;
+    }
+    .timerblack {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
   }
 }
