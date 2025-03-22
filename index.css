@@ -484,8 +484,8 @@ main .R2:nth-child(2n),
 
 .changelog {
   white-space: nowrap;
-  overflow-x: hidden; /* Enables horizontal scrolling */
-  overflow-y: auto; /* Disables vertical scrolling */
+  overflow-x: hidden;
+  overflow-y: auto;
   font-size: 13px;
   width: 90%;
   height: 50%;
@@ -495,7 +495,7 @@ main .R2:nth-child(2n),
   background: linear-gradient(to right, #3fccff, #da4176);
   color: white;
   display: flex;
-  align-items: flex-start; /* Align children to the start of the cross axis */
+  align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   text-align: left;
@@ -571,14 +571,14 @@ main .R2:nth-child(2n),
 
 .starter {
   border: 2px solid blue;
-  transition: transform 0.5s ease; /* smooth transformation on hover */
-  box-shadow: inset 0px 0px 26px rgba(89, 4, 207, 0.3); /* a subtle shadow for depth */
+  transition: transform 0.5s ease;
+  box-shadow: inset 0px 0px 26px rgba(89, 4, 207, 0.3);
 }
 
 .endmove {
   border: 2px solid rgb(1, 15, 121);
-  transition: transform 0.5s ease; /* smooth transformation on hover */
-  box-shadow: inset 0px 0px 16px rgba(17, 17, 119, 0.4); /* a subtle shadow for depth */
+  transition: transform 0.5s ease;
+  box-shadow: inset 0px 0px 16px rgba(17, 17, 119, 0.4);
 }
 
 .display {
